@@ -3,7 +3,7 @@ function practice(name, hours, rate) {
         name: name,
         salary: ()=>{
             return hours * rate;
-        },
+        }
     }
 }
 
