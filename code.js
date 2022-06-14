@@ -7,7 +7,7 @@ function practice(name, hours, rate) {
         display: () => {
             document.write(`
             <br>Name: ${name} <br>
-                Salary: ${hours * rate}<br>`
+                Salary: R${hours * rate}<br>`
             );
         }
     }
