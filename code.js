@@ -3,6 +3,12 @@ function practice(name, hours, rate) {
         name: name,
         salary: ()=>{
             return hours * rate;
+        },
+        display: () => {
+            document.write(`
+            <br>Name: ${name} <br>
+                Salary: ${hours * rate}<br>`
+            );
         }
     }
 }
@@ -10,5 +16,5 @@ function practice(name, hours, rate) {
 let employee1 = practice('Peter', 40, 500);
 let employee2 = practice('Samuel', 80, 300);
 
-document.write(employee1.salary());
-document.write(employee2.salary());
+employee1.display();
+employee2.display();
